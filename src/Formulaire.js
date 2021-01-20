@@ -3,30 +3,48 @@ class Formulaire extends Component {
     render() {
         return (
             <div>
-                <h2>Informations Personnelles</h2>
+                <h1>Informations Personnelles</h1>
                 <form >
-                    <fieldset>
+                   
                         <label>
-                            <p>Nom</p>
-                            <input name="nom" />
+                            <p>First Name</p>
+                            <input
+                                placeholder="First Name"
+                                type="text"
+                                name="firstName" />
+                        </label>
+                        <label>
+                            <p>Last Name</p>
+                            <input
+                                placeholder="Last Name"
+                                type="text"
+                                name="lasttName" />
+                        </label>
+                    
+                        <label>
+                            <p>Email</p>
+                            <input
+                                placeholder="Email Address"
+                                type="email"
+                                name="email" />
 
                         </label>
                         <label>
-                            <p>Prénom</p>
-                            <input name="prenom" />
-
+                            <p>Telephone Number</p>
+                            <input
+                                placeholder="Telephone"
+                                type="number"
+                                name="telephone" />
                         </label>
+
                         <label>
-                            <p>Adresse email</p>
-                            <input name="email" />
-
+                            <p>Password</p>
+                            <input
+                                placeholder="Password"
+                                type="password"
+                                name="password" />
                         </label>
-                        <label>
-                            <p>Numéro Téléphone</p>
-                            <input name="telephone" />
-
-                        </label>
-                    </fieldset>
+                    
                     <button type="submit">Submit</button>
                 </form>
             </div>
